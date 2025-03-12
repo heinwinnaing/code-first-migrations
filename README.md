@@ -16,7 +16,7 @@ dotnet ef migrations add InitialCreate -- "your-database-connection"
 # <h3>Apply the Migration (Update Database)</h3>
 Applies the migration to database
 ```csharp
-dotnet ef database update -- "your-database-connection-string"
+dotnet ef database update -- "your-database-connection"
 ```
 
 # <h3>Rollback (Undo Last Migration)</h3>
