@@ -10,22 +10,22 @@ Code-First Migration is an EF Core feature that allows developers to define thei
 # <h3>Add the First Migration</h3>
 Creates a migration file (e.g., 20240228_InitialCreate.cs).
 ```csharp
-dotnet ef migrations add InitialCreate -- "your-connection-string"
+dotnet ef migrations add InitialCreate -- "your-database-connection"
 ```
 
 # <h3>Apply the Migration (Update Database)</h3>
 Applies the migration to database
 ```csharp
-dotnet ef database update -- "your-connection-string"
+dotnet ef database update -- "your-database-connection-string"
 ```
 
 # <h3>Rollback (Undo Last Migration)</h3>
 To undo the last migration before updating the database:
 ```csharp
-dotnet ef migrations remove -- "your-connection-string"
+dotnet ef migrations remove -- "your-database-connection"
 ```
 
 To revert to a specific migration:
 ```csharp
-dotnet ef database update InitialCreate  -- "your-connection-string"
+dotnet ef database update InitialCreate  -- "your-database-connection"
 ```
